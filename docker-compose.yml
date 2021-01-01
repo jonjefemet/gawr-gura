@@ -1,0 +1,10 @@
+version: "3.3"
+services: 
+  web:
+    build: ./docker/web
+    expose: 
+      - 9000
+    ports: 
+      - 9000:80
+    volumes: 
+      - .:/var/www/html/
