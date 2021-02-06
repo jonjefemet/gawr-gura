@@ -1,12 +1,12 @@
 <?php
 namespace App;
-
+use App\GuraTools\Routing;
 class Application
 {
     
     public function run()
     {
-        print_r('panas');
+        new Routing();
     }
     
 }
