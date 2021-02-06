@@ -1,3 +1,4 @@
-<?php
 
-echo "Ayuda Panas";
+<?php
+phpinfo();
+?>
