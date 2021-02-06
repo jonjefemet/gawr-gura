@@ -1,0 +1,13 @@
+{
+    "name": "jonjefemet/gawr-gura",
+    "description": "simple project with php 8",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonjefemet",
+            "email": "jonshua_97@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
