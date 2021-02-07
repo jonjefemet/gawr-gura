@@ -1,14 +1,16 @@
 <?php
+
 namespace App\GuraTools;
+
+use App\GuraTools\Di\Container;
 
 class Routing
 {
+    private string $controller = '';
+    private string $method = '';
+    private array $params = [];
 
-    public function __construct(
-        private string $controller = '',
-        private string $method = '',
-        private array $params = []
-    )
+    public function __construct()
     {
         $this->run($this->getUrl());
     }
@@ -17,14 +19,14 @@ class Routing
     {
         $this->getControllerAndMethod($url);
 
-        print_r($url);
-        #$controller = Container::newController($this->controller);
+        
+        $controller = Container::newController($this->controller);
 
-        #if (method_exists($controller, $this->method)) {
-        #    call_user_func_array([$controller, $this->method], $this->params);
-        #} else {
-        #    throw new \Exception("method not found", 1);
-        #}
+        if (method_exists($controller, $this->method)) {
+            call_user_func_array([$controller, $this->method], $this->params);
+        } else {
+            throw new \Exception("method not found", 1);
+        }
     }
 
     public function getUrl()
