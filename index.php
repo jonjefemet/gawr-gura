@@ -6,6 +6,8 @@ error_reporting(-1);
 
 require __DIR__ . '/vendor/autoload.php';
 
+define("APP_PATH", $_SERVER["DOCUMENT_ROOT"]);
+
 use App\Application;
 
 $application = new Application();
