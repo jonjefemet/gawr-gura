@@ -14,6 +14,6 @@ class HomeController extends BaseController
 
     public function index()
     {
-        $this->render(["array" => [], "pana" => "ok"]);
+        $this->render("index",["array" => [], "pana" => ["ok","pana"]]);
     }
 }
