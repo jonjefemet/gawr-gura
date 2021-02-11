@@ -12,3 +12,5 @@ Motivos por el cual se realizo.
   - Ver de que soy capaz con php
   - Realizar cosas weeb en mis proyectos
   - Una promesa olvidada
+
+***Se estaran subiendo actualizaciones cada semana***	
