@@ -15,5 +15,8 @@ Motivos por el cual se realizo.
 
 ***Se estaran subiendo actualizaciones cada semana***	
 
->***ride on time!\***
->![shark](https://i.imgur.com/uOpMXdz.png)
+>![shark](https://i.imgur.com/uOpMXdz.png)\
+>***Run on time, Ride on time.***\
+>***Love, love, shining brightly.***
+
+
