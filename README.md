@@ -14,3 +14,6 @@ Motivos por el cual se realizo.
   - Una promesa olvidada
 
 ***Se estaran subiendo actualizaciones cada semana***	
+
+>***ride on time!\***
+>![shark](https://i.imgur.com/uOpMXdz.png)
