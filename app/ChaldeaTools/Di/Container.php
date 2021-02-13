@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GuraTools\Di;
+namespace App\ChaldeaTools\Di;
 
 use Throwable;
 
