@@ -6,7 +6,7 @@ return [
         "host" => "192.168.1.72",
         "dbname" => "test",
         "user" => "amelia",
-        "pass" => "ground pound",
+        "pass" => "ground_pound",
         "charset" => "utf8",
         "collation" => "utf8_unicode_ci"
     ],

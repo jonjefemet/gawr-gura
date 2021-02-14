@@ -41,8 +41,7 @@ class DataBases
 
     public static function dbMysql($config): PDO
     {
-        ini_set('mysql.connect_timeout', 300);
-        ini_set('default_socket_timeout', 300);
+
         $host = 'mysql:host=:host:;dbname=:dbname:;charset=:charset:';
         $host = str_replace(':host:', $config['host'], $host);
         $host = str_replace(':dbname:', $config['dbname'], $host);
@@ -55,8 +54,8 @@ class DataBases
                     $config['user'],
                     $config['pass'],
                 );
-                #self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                #self::$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+                self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                self::$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             }
             return self::$pdo;
         } catch (\PDOException $e) {
