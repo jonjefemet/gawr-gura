@@ -24,7 +24,7 @@ class DataBases
         }
     }
 
-    public static function getConnection(string $name = "")
+    public static function getConnection(string $name = ""): PDO
     {
         $db_config = DataBases::findConnection($name);
 
