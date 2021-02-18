@@ -4,34 +4,35 @@ namespace App\ChaldeaTools\SenkoSan;
 
 use App\ChaldeaTools\SenkoSan\DataBases;
 
-class Kitsune extends DataBases
+abstract class Kitsune extends DataBases
 {
+
+    abstract public function getColumns(): array;
 
     public function __construct(private string $table_name = "")
     {
     }
 
-    public function getAll(array $filter = [], string $db_name = "default")
+    public function buildQueryWithDefaultFilters($inputs = [])
     {
 
-        try {
+        $query = [
+            "conditions" => [],
+            "values" => [],
+            "sorts" => [],
+            "columns" => [],
+            "limit" => null,
+            "offset" => null,
+        ];
 
-            $bind = [];
+        $column_names = $this->getColumns();
 
-            $connection = $this->getConnection($db_name);
-            $this->sentence = 'SELECT * FROM ' . $this->table_name ;
-            $statement = $connection->prepare($this->sentence);
-            $statement->execute($bind);
-
-            $data = [];
-            while ($row = $statement->fetch()) {
-                $data[] = $row;
+        if (is_array($column_names)) {
+            foreach ($column_names as $column_name) {
+                
             }
-
-            return $data;
-        } catch (\Throwable $th) {
-            throw $th->getMessage();
         }
 
+        return $column_names;
     }
 }

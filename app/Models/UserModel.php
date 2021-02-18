@@ -10,4 +10,14 @@ class UserModel extends Kitsune
     {
         parent::__construct("user");
     }
+
+    public function getColumns(): array
+    {
+        return [
+            "id_user",
+            "first_name",
+            "last_name",
+            "status",
+        ];
+    }
 }
