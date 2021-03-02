@@ -27,12 +27,33 @@ abstract class Kitsune extends DataBases
 
         $column_names = $this->getColumns();
 
-        if (is_array($column_names)) {
-            foreach ($column_names as $column_name) {
-                
+        foreach ($column_names as $column_name) {
+            
+        }
+
+
+        $query["columns"] = $this->filterColumns($inputs);
+
+
+        return $column_names;
+    }
+
+    public function filterColumns(array $inputs = [])
+    {
+        $results = [];
+
+        if (array_key_exists("columns", $inputs) and !empty($inputs)) {
+            $attributes = (is_array($inputs["columns"])) ? $inputs["columns"] : array_map("trim", explode(",", $inputs["columns"]));
+            foreach ($attributes as  $attribute) {
+                array_push($results, $attribute);
             }
         }
 
-        return $column_names;
+        return $results;
+    }
+
+    public function addEqualFilterToQuery()
+    {
+
     }
 }
