@@ -9,7 +9,7 @@
 > ***Un FrameWork simple, utilizando nombre de las cosas que mas me gustan ![Sheep](https://cdn.discordapp.com/emojis/684213920319537195.gif?v=1&size=40)***
 
 
-Un proyecto realizo para poder aplicar lo aprendido en todo estos años y daler un poco de amor a PHP, el cual fue el lenguaje que mas odie pero termine amandolo por su simplisidad.
+Un proyecto realizo para poder aplicar lo aprendido en todo estos años y darle un poco de amor a PHP, el cual fue el lenguaje que mas odie pero termine amandolo por su simplisidad.
 
 Motivos por el cual se realizo.
 
